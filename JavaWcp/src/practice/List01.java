@@ -19,6 +19,7 @@ public class List01 {
 		list1.add("みかん");
 		// 位置を指定して要素を追加する
 		list1.add(1, "バナナ");
+			System.out.println(list1);
 		
 		// 要素を取得する
 		list1.get(0);
@@ -36,7 +37,7 @@ public class List01 {
 		// 位置を指定して要素を削除する
 		list1.remove(0);
 		
-		System.out.println(list1);
+			System.out.println(list1);
 
 	}
 }
