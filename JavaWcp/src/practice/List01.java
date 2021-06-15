@@ -24,6 +24,15 @@ public class List01 {
 		// 要素を取得する
 		list1.get(0);
 		
+		//拡張for文
+		list2.add(123);
+		list2.add(456);
+		list2.add(789);
+		
+		for (Integer num : list2) {
+			System.out.println(num);
+		}
+		
 		// 存在チェック (trueを返す)
 		list1.contains("バナナ");
 		// 存在チェック (falseを返す)

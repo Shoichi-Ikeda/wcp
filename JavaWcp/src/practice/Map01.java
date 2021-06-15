@@ -25,6 +25,23 @@ public class Map01 {
 		map1.get(1);
 		map1.get(2);
 		
+		//拡張for文
+		map2.put("ブルゴーニュ", "ロマネ・コンティ");
+		map2.put("ピエモンテ", "バローロ");
+		map2.put("カリフォルニア", "オーパス・ワン");
+		//キーのみ
+		for (String key : map2.keySet()) {
+			System.out.println(key);
+		}
+		//値のみ
+		for (String name : map2.values()) {
+			System.out.println(name);
+		}
+		//キーと値のペア
+		for (Map.Entry<String, String> wine : map2.entrySet()) {
+			System.out.println(wine.getKey() + "州のワインは" + wine.getValue() + "です。");
+		}
+		
 		//キーの存在チェック
 		map1.containsKey(0);
 		map1.containsKey("ぶどう");
