@@ -7,8 +7,12 @@ import java.util.List;
 public class List01 {
 	public static void main(String[] args) {
 		// ArrayListを生成する場合
+		//インデックス指定で要素を取り出すのはArrayListの方が速い
+		//先頭から順に処理をするのはArrayListの方が速い
 		List<String> list1 = new ArrayList<String>();
 		// LinkedListを生成する場合
+		//要素の挿入はLinkedListの方が速い
+		//要素の削除はLinkedListの方が速い
 		List<Integer> list2 = new LinkedList<Integer>();
 		// 要素を追加する
 		list1.add("りんご");
