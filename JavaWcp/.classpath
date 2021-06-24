@@ -7,5 +7,10 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/Users/shoichi.i/Downloads/byte-buddy-1.11.3.jar"/>
+	<classpathentry kind="lib" path="/Users/shoichi.i/Downloads/byte-buddy-agent-1.11.3.jar"/>
+	<classpathentry kind="lib" path="/Users/shoichi.i/Downloads/mockito-core-3.11.2.jar"/>
+	<classpathentry kind="lib" path="/Users/shoichi.i/Downloads/mockito-junit-jupiter-3.11.2.jar"/>
+	<classpathentry kind="lib" path="/Users/shoichi.i/Downloads/objenesis-3.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
