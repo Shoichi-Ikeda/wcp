@@ -20,14 +20,15 @@ public class MockitoSampleTest {
 
 	@Mock
 	private Calculator calc;
-	
+
 	@InjectMocks
 	private MockitoSample sample;
-	
+
 	@BeforeEach
 	void setUp() {
 		MockitoAnnotations.initMocks(this);
 	}
+
 	@Test
 	@DisplayName("getSquareResultに5を渡した時に25が表示できる")
 	void test() {
