@@ -19,8 +19,8 @@ public class Chapter05 {
 		System.out.println(integer1);
 		System.out.println(chara1);
 		
-		int[] array = new int[5];
-		array[0] = 10;
+		int[] array = new int[5]; // 配列の宣言と生成
+		array[0] = 10; // インデックス番号「0」を指定して１番目の要素にデータを代入
 		array[4] = 20;
 		array[1] = 30;
 		array[3] = 40;
