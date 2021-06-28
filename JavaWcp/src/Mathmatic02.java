@@ -14,13 +14,15 @@ public class Mathmatic02 {
 		int b;
 		int c;
 		b = 5;
-		//bをインクリメントした後にaがcに代入される
+		//　b　をインクリメントした後に　a　が　c　に代入される
 		c = ++b;
+		// それぞれの値は　b　が「6」で　c　も「6」
 		System.out.println(b);
 		System.out.println(c);
-		//bをcに代入した後にaがインクリメントされる
+		//　b　を　c　に代入した後に　a　がインクリメントされる
 		b = 5;
 		c = b++;
+		// それぞれの値は　b　が「6」で　c　が「5」
 		System.out.println(b);
 		System.out.println(c);
 	}
