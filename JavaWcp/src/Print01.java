@@ -1,3 +1,4 @@
+//改行なし画面出力の命令
 public class Print01 {
 	public static void main(String[] args) {
 		String name = "池田";
