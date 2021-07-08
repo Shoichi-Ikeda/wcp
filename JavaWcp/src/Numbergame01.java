@@ -1,4 +1,4 @@
-public class Numbergame {
+public class Numbergame01 {
 	public static void main(String[] args) {
 		System.out.println("【数当てゲーム】");
 		int ans = new java.util.Random().nextInt(10);
