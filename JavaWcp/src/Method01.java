@@ -4,6 +4,7 @@ public class Method01 {
 		hello(); // helloメソッドを呼び出す
 		System.out.println("メソッドの呼び出しが終わりました。");		
 	}
+	// helloメソッドの本体
 	public static void hello() {
 		System.out.println("優海さん、こんにちは");
 	}
