@@ -1,4 +1,4 @@
-//Overload(多重定義)
+//多重定義(引数の"型"が異なる場合)
 public class Overload01 {
 	//1つ目のメソッド
 	public static int add(int x, int y) {
