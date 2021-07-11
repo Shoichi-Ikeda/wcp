@@ -12,5 +12,4 @@ public class Overload02 {
 		System.out.println("10 + 20 = " + add(10, 20)); //1つ目のaddメソッドが呼び出される
 		System.out.println("10 + 20 + 30 = " + add(10, 20, 30)); //2つ目のaddメソッドが呼び出される
 	}
-	
 }
