@@ -2,7 +2,7 @@ public class Hero {
 	//属性の定義
 	String name; //名前の変数宣言
 	int hp; //HPの変数宣言
-	//操作の定義
+	Sword sword; //勇者が装備している剣の情報
 	public void attack() {
 		
 	}
