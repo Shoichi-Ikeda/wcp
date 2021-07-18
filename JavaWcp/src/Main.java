@@ -1,10 +1,15 @@
 public class Main {
 	public static void main(String[] args) {
+		//剣を装備した勇者を生み出す
+		Sword s = new Sword();
+		s.name = "炎の剣";
+		s.damage = 10;
 		//1.勇者を生成
 		Hero h = new Hero(); //Heroクラスからインスタンスを生成し、変数hに入れる
 		//2.フィールドに初期値をセット
 		h.name = "レンスケ"; //変数hのnameに代入
 		h.hp = 100; //変数hのhpに代入
+		h.sword = s; //swordフィールドに生成済みの剣インスタンス(の番地)を代入
 		System.out.println("勇者" + h.name + "を生み出しました！");
 		
 		Matango m1 = new Matango(); //おばけキノコA(1匹目)を生成し初期化
