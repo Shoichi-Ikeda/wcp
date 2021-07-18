@@ -4,7 +4,8 @@ public class Hero {
 	int hp; //HPの変数宣言
 	Sword sword; //勇者が装備している剣の情報
 	public void attack() {
-		
+		System.out.println(this.name + "は" + sword.name +"で攻撃した！");
+		System.out.println("敵に5ポイントのダメージを与えた！");
 	}
 	public void sleep() {
 		this.hp = 100; //自分自身のhpフィールド

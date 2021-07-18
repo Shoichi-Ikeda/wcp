@@ -23,6 +23,7 @@ public class Main {
 		
 		//冒険の始まり
 		h.slip(); //勇者は転ぶ
+		h.attack();
 		m1.run(); //おばけキノコAが逃げる
 		m2.run(); //おばけキノコBも逃げる
 		h.run(); //勇者も逃げる
