@@ -8,7 +8,6 @@ public class Main {
 		Hero h = new Hero(); //Heroクラスからインスタンスを生成し、変数hに入れる
 		//2.フィールドに初期値をセット
 		h.name = "レンスケ"; //変数hのnameに代入
-		h.hp = 100; //変数hのhpに代入
 		h.sword = s; //swordフィールドに生成済みの剣インスタンス(の番地)を代入
 		System.out.println("勇者" + h.name + "を生み出しました！");
 		System.out.println("現在の武器は" + h.sword.name);

@@ -26,4 +26,7 @@ public class Hero {
 		System.out.println("GAMEOVER");
 		System.out.println("最終HPは" + this.hp + "でした。");
 	}
+	public Hero() { //newされた直後に自動に実行される処理を書いたメソッド
+		this.hp = 100;
+	}
 }
