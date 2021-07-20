@@ -26,13 +26,13 @@ public class Hero {
 		System.out.println("GAMEOVER");
 		System.out.println("最終HPは" + this.hp + "でした。");
 	}
-	//newされた直後に自動に実行される処理を書いたメソッド
+	//newされた直後に自動に実行される処理を書いたメソッド(コンストラクタ①)
 	public Hero(String name) { //引数として文字列を1つ受け取る
 		this.hp = 100;
 		this.name = name; //引数の値でnameフィールドを初期化
 	}
+	//コンストラクタ②
 	public Hero() { //新しく作ったコンストラクタ
-		this.hp = 100;
-		this.name = "ダミー"; //ダミーの名前を設定する
+		this("ダミー"); //コンストラクタ①を呼び出すようJVMに依頼する
 	}
 }
