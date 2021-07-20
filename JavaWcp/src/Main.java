@@ -5,9 +5,11 @@ public class Main {
 		s.name = "炎の剣";
 		s.damage = 10;
 		//1.勇者を生成
-		Hero h = new Hero(); //Heroクラスからインスタンスを生成し、変数hに入れる
+		Hero h = new Hero("蓮丞"); //インスタンス生成後、JVMがコンストラクタを呼び出す際に「蓮丞」を渡してもらえる
+		System.out.println(h.hp);
+		System.out.println(h.name);
 		//2.フィールドに初期値をセット
-		h.name = "レンスケ"; //変数hのnameに代入
+		//h.name = "レンスケ"; //変数hのnameに代入
 		h.sword = s; //swordフィールドに生成済みの剣インスタンス(の番地)を代入
 		System.out.println("勇者" + h.name + "を生み出しました！");
 		System.out.println("現在の武器は" + h.sword.name);
