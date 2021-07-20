@@ -26,7 +26,9 @@ public class Hero {
 		System.out.println("GAMEOVER");
 		System.out.println("最終HPは" + this.hp + "でした。");
 	}
-	public Hero() { //newされた直後に自動に実行される処理を書いたメソッド
+	//newされた直後に自動に実行される処理を書いたメソッド
+	public Hero(String name) { //引数として文字列を1つ受け取る
 		this.hp = 100;
+		this.name = name; //引数の値でnameフィールドを初期化
 	}
 }
