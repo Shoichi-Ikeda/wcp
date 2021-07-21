@@ -11,6 +11,9 @@ public class Main {
 		h.sword = s; //swordフィールドに生成済みの剣インスタンス(の番地)を代入
 		System.out.println("勇者" + h.name + "を生み出しました！");
 		System.out.println("現在の武器は" + h.sword.name);
+		//SuperHero生成
+		SuperHero sh = new SuperHero();
+		sh.run();
 		
 		Matango m1 = new Matango(); //おばけキノコA(1匹目)を生成し初期化
 		m1.hp = 50;
