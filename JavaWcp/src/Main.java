@@ -22,12 +22,16 @@ public class Main {
 		
 		//SuperHero生成
 		SuperHero sh = new SuperHero();
+		sh.sword = s;
 		System.out.println("勇者" + sh.name + "を生み出しました！");
+		System.out.println("現在の武器は" + sh.sword.name);
 		
 		//冒険の始まり
 		h.slip(); //勇者は転ぶ
 		h.attack();
 		sh.fly();
+		sh.attack();
+		sh.run();
 		m1.run(); //おばけキノコAが逃げる
 		m2.run(); //おばけキノコBも逃げる
 		h.run(); //勇者も逃げる
