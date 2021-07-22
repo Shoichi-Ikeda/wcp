@@ -3,7 +3,14 @@ public class SuperHero extends Hero {
 	boolean flying;
 	public void fly() {
 		this.flying = true;
-		System.out.println("飛び上がった！");
+		System.out.println(this.name + "は飛び上がった！");
+	}
+	//親クラスのattackを呼び出す
+	public void attack() {
+		super.attack(); //親インスタンス部分のattack()を呼び出し
+		if (this.flying) {
+			super.attack();
+		}
 	}
 	public void land() {
 		this.flying = false;

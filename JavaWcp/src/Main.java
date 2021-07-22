@@ -11,9 +11,6 @@ public class Main {
 		h.sword = s; //swordフィールドに生成済みの剣インスタンス(の番地)を代入
 		System.out.println("勇者" + h.name + "を生み出しました！");
 		System.out.println("現在の武器は" + h.sword.name);
-		//SuperHero生成
-		SuperHero sh = new SuperHero();
-		sh.run();
 		
 		Matango m1 = new Matango(); //おばけキノコA(1匹目)を生成し初期化
 		m1.hp = 50;
@@ -23,14 +20,16 @@ public class Main {
 		m2.hp = 48;
 		m2.suffix = 'B';
 		
+		//SuperHero生成
+		SuperHero sh = new SuperHero();
+		System.out.println("勇者" + sh.name + "を生み出しました！");
+		
 		//冒険の始まり
 		h.slip(); //勇者は転ぶ
 		h.attack();
+		sh.fly();
 		m1.run(); //おばけキノコAが逃げる
 		m2.run(); //おばけキノコBも逃げる
 		h.run(); //勇者も逃げる
-		//おばけキノコよ、この仮想空間に生まれよ！
-		//勇者よ、戦え！
-		//おばけキノコよ、逃げろ！
 	}
 }
