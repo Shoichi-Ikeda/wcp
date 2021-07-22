@@ -19,5 +19,7 @@ public class SuperHero extends Hero {
 	//SuperHeroクラスにrun()を再定義する
 	public void run() { //親クラスにも定義してあるが、小クラスで再定義するメソッド
 		System.out.println(this.name + "は撤退した！");
+		System.out.println("GAMEOVER");
+		System.out.println("最終HPは" + this.hp + "でした。");
 	}
 }
