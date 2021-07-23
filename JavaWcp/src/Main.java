@@ -4,6 +4,7 @@ public class Main {
 		Sword s = new Sword();
 		s.name = "炎の剣";
 		s.damage = 10;
+		
 		//1.勇者を生成
 		Hero h = new Hero("蓮丞"); //インスタンス生成後、JVMがコンストラクタを呼び出す際に「蓮丞」を渡してもらえる
 		//2.フィールドに初期値をセット
@@ -12,28 +13,27 @@ public class Main {
 		System.out.println("勇者" + h.name + "を生み出しました！");
 		System.out.println("現在の武器は" + h.sword.name);
 		
-		Matango m1 = new Matango(); //おばけキノコA(1匹目)を生成し初期化
-		m1.hp = 50;
-		m1.suffix = 'A';
-		
-		Matango m2 = new Matango(); //おばけキノコB(2匹目)を生成し初期化
-		m2.hp = 48;
-		m2.suffix = 'B';
-		
 		//SuperHero生成
 		SuperHero sh = new SuperHero();
 		sh.sword = s;
 		System.out.println("勇者" + sh.name + "を生み出しました！");
 		System.out.println("現在の武器は" + sh.sword.name);
+
+		//おばけキノコA(1匹目)を生成し初期化
+		Matango m1 = new Matango('A');
+		//おばけ毒キノコB(2匹目)を生成し初期化
+		PoisonMatango m2 = new PoisonMatango('B');
 		
 		//冒険の始まり
 		h.slip(); //勇者は転ぶ
 		h.attack();
 		sh.fly();
 		sh.attack();
-		sh.run();
+		m1.attack(h);
+		m2.attack(sh);
 		m1.run(); //おばけキノコAが逃げる
 		m2.run(); //おばけキノコBも逃げる
 		h.run(); //勇者も逃げる
+		sh.run();
 	}
 }
