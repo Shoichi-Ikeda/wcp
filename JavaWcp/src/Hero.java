@@ -1,11 +1,12 @@
-public class Hero {
+public class Hero extends Character {
 	//属性の定義
 	String name; //名前の変数宣言
 	int hp; //HPの変数宣言
 	Sword sword; //勇者が装備している剣の情報
-	public void attack() {
+	public void attack(Matango m) {
 		System.out.println(this.name + "は" + sword.name +"で攻撃した！");
 		System.out.println("敵に5ポイントのダメージを与えた！");
+		m.hp -= 10;
 	}
 	public void sleep() {
 		this.hp = 100; //自分自身のhpフィールド
