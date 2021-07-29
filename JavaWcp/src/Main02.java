@@ -14,15 +14,15 @@ public class Main02 {
 		w1.hp += 50;
 		w2.hp += 50;
 		*/
-		Character[] c = new Character[5];
+		Character[] c = new Character[5]; //配列を使う
 		c[0] = new Hero();
 		c[1] = new Hero();
 		c[2] = new Thief();
 		c[3] = new Wizard();
 		c[4] = new Wizard();
 		//宿屋に泊まる
-		for (Character ch : c) {
-			ch.hp += 50;
+		for (Character ch : c) { //1名ずつ順に取り出し
+			ch.hp += 50;         //HPを50回復する
 		}
 	}
 }
