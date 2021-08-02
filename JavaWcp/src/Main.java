@@ -15,6 +15,7 @@ public class Main {
 		
 		//SuperHero生成
 		SuperHero sh = new SuperHero();
+		sh.name = "優海";
 		sh.sword = s;
 		System.out.println("勇者" + sh.name + "を生み出しました！");
 		System.out.println("現在の武器は" + sh.sword.name);

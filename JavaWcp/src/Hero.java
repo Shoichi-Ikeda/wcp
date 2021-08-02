@@ -15,7 +15,6 @@ public class Hero extends Character {
 			throw new IllegalArgumentException("名前が長すぎる。処理を中断。");
 		}
 	}
-	
 	public void attack() {
 		System.out.println(this.name + "は" + sword.name +"で攻撃した！");
 		System.out.println("敵に5ポイントのダメージを与えた！");
@@ -50,6 +49,6 @@ public class Hero extends Character {
 	}
 	//コンストラクタ②
 	public Hero() { //新しく作ったコンストラクタ
-		this("ダミー"); //コンストラクタ①を呼び出すようJVMに依頼する
+		this("翔一"); //コンストラクタ①を呼び出すようJVMに依頼する
 	}
 }
