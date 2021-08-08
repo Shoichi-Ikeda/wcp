@@ -2,7 +2,7 @@ public class Hero extends Character {
 	//属性の定義
 	protected String name; //名前の変数宣言
 	protected int hp; //HPの変数宣言
-	static int money; //静的フィールド
+	static int money; //静的フィールド(クラスに対して1つだけ)
 	Sword sword; //勇者が装備している剣の情報
 	
 	public void setName(String name) {
