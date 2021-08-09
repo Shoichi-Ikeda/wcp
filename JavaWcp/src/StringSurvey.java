@@ -1,5 +1,5 @@
 //文字列調査メソッドを利用
-public class Main04 {
+public class StringSurvey {
 	public static void main(String args[]) {
 		String s1 = "スッキリJava";
 		String s2 = "Java";
