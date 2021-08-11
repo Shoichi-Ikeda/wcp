@@ -9,6 +9,7 @@ public class Valid {
 		String m = "Mathmaric";
 		String s = "Java";
 		String t = "Jaaaaaaava";
+		String u = "URL";
 		//①通常文字:その文字でなければならない
 		System.out.println("①");
 		System.out.println(s.matches("Java"));
@@ -32,5 +33,11 @@ public class Valid {
 		System.out.println(b.matches("AB{3}")); //3回の繰り返し
 		System.out.println(t.matches("Ja{4,}va")); //4回以上の繰り返し
 		System.out.println(t.matches("Ja{5,8}va")); //5回以上8回以下の繰り返し
+		//⑤角括弧[]:いずれかの文字
+		System.out.println("⑤");
+		System.out.println(u.matches("UR[LMN]"));
+		//⑥角括弧内のハイフン:指定範囲のいずれかの文字
+		System.out.println("⑥");
+		System.out.println(u.matches("[A-Z]{3}"));
 	}
 }
