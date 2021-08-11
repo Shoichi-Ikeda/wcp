@@ -8,6 +8,7 @@ public class Valid {
 		String j = "joyful";
 		String m = "Mathmaric";
 		String s = "Java";
+		String t = "Jaaaaaaava";
 		//①通常文字:その文字でなければならない
 		System.out.println("①");
 		System.out.println(s.matches("Java"));
@@ -26,5 +27,10 @@ public class Valid {
 		System.out.println(d.matches(".*"));
 		System.out.println(j.matches(".*ful"));
 		System.out.println(m.matches("Ma.*"));
+		//④波括弧{}:指定回数の繰り返し
+		System.out.println("④");
+		System.out.println(b.matches("AB{3}")); //3回の繰り返し
+		System.out.println(t.matches("Ja{4,}va")); //4回以上の繰り返し
+		System.out.println(t.matches("Ja{5,8}va")); //5回以上8回以下の繰り返し
 	}
 }
