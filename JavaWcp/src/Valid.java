@@ -39,5 +39,9 @@ public class Valid {
 		//⑥角括弧内のハイフン:指定範囲のいずれかの文字
 		System.out.println("⑥");
 		System.out.println(u.matches("[A-Z]{3}"));
+		//⑦ハットとダラー:先頭と末尾
+		System.out.println("⑦");
+		System.out.println(s.matches("^J.*a$"));
+		System.out.println(t.matches("^J.*a$"));
 	}
 }
