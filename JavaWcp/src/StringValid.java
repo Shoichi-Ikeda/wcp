@@ -1,5 +1,5 @@
 //正規表現の基本文法
-public class Valid {
+public class StringValid {
 	public static void main(String[] args) {
 		String a = "AB";
 		String b = "ABBB";
