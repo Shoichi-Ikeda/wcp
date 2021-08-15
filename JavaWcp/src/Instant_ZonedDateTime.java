@@ -23,7 +23,7 @@ public class Instant_ZonedDateTime {
 		//ZonedDateTimeの利用方法
 		System.out.println("東京:" + z2.getYear() + z2.getMonth() + z2.getDayOfMonth());
 		System.out.println("ロンドン:" + z3.getYear() + z3.getMonth() + z3.getDayOfMonth());
-		if (z2.isEqual(z3)) {
+		if (z2.isEqual(z3)) { //同じ瞬間の判定には equals() ではなく　isEqual() を使う
 			System.out.println("これらは同じ瞬間を指しています。");
 		}
 	}
