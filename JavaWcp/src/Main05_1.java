@@ -2,7 +2,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class Main05 {
+public class Main05_1 {
 	public static void main(String[] args) {
 		//①現在の日時をDate型で取得
 		Date now = new Date();
