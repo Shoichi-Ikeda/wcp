@@ -23,7 +23,9 @@ public class Main05_1 {
 		
 		//⑥指定された形式に表示
 		SimpleDateFormat f = new SimpleDateFormat("西暦yyyy年MM月dd日");
+		System.out.println(now);
 		System.out.println(f.format(now));
+		System.out.println(future);
 		System.out.println(f.format(future));
 	}
 }
