@@ -1,3 +1,4 @@
+//Iteratorを使ったArrayListの繰り返し処理
 import java.util.ArrayList;
 import java.util.Iterator;
 
