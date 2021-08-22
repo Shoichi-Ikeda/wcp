@@ -10,5 +10,10 @@ public class Set_Exmple {
 		colors.add("黃");
 		colors.add("赤"); //重複して「赤」を収納しようとしても無視される
 		System.out.println("色は" + colors.size() + "種類");
+		
+		//Setから要素を取り出すと…
+		for (String s : colors) {
+			System.out.print(s + "→");
+		}
 	}
 }
