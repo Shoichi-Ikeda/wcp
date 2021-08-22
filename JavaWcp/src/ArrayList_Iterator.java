@@ -8,8 +8,8 @@ public class ArrayList_Iterator {
 		names.add("蓮丞");
 		names.add("翔一");
 		Iterator<String> it = names.iterator();
-		while (it.hasNext()) {
-			String e = it.next();
+		while (it.hasNext()) { //矢印を次に進められるなら繰り返す
+			String e = it.next(); //矢印を次に進め繰り返す
 			System.out.println(e);
 		}
 	}
