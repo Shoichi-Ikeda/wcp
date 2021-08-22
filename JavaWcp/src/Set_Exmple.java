@@ -13,7 +13,7 @@ public class Set_Exmple {
 		
 		//Setから要素を取り出すと…
 		for (String s : colors) {
-			System.out.print(s + "→");
+			System.out.print(s + "→"); //格納の順序とは異なる
 		}
 	}
 }
