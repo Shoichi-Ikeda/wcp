@@ -5,9 +5,9 @@ public class ArrayList_Exmple {
 		//ArrayListを準備
 		ArrayList<String> names = new ArrayList<String>();
 		//3人を追加
-		names.add("池田");
-		names.add("藤村");
-		names.add("安部");
+		names.add("優海");
+		names.add("蓮丞");
+		names.add("翔一");
 		System.out.println(names.get(1));
 	}
 }
