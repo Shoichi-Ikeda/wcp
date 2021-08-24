@@ -19,5 +19,10 @@ public class Map_HashMap {
 		prefs.put("福岡県", 510); //値を510に上書き
 		int Fukuoka = prefs.get("福岡県");
 		System.out.println("福岡県の人口は" + Fukuoka);
+		
+		for (String key : prefs.keySet()) { //県名一覧を取得し繰り返す
+			int value = prefs.get(key);
+			System.out.println(key + "の人口は" + value);
+		}
 	}
 }
